@@ -13,14 +13,12 @@ Setup
 Ensure that Python 3.6 or newer is installed on your system. You can download Python from the official website.
 
 
-2. Install Required Packages
-Install Dask and other required Python packages using pip. It's recommended to use a virtual environment:
-`python3 -m venv venv
-source venv/bin/activate
-pip3 install dask[distributed] tqdm`
+2. Installing Dask
+  You first need to ensure Dask is installed on the scheduler and worker machines:
+  `pip3 install "dask[complete]"` 
 
 
-3. Configure Dask Cluster
+4. Configure Dask Cluster
 Local Cluster
 For local testing or development, you can use Dask's ability to create a cluster on your machine utilizing its cores. This is automatically handled when you instantiate a Client object without specifying a scheduler address in the script.
 
